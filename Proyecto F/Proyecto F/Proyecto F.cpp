@@ -82,3 +82,12 @@ int main()
                 m++;
                 d = 1;
             }
+        else
+        {
+            d++;
+        }
+    }
+    printf("%2i %2i %4i", d, m, a);
+
+        return 0;
+}
