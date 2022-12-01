@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
 int main()
 {
@@ -50,3 +50,42 @@ int main()
             {
                 d++;
             }
+        }
+    else if (d == 4 && m == 10 && a == 1582)
+    {
+        d = 15;
+    }
+    else if (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12)
+    {
+        if (d == 31 && m != 12)
+        {
+            m++;
+            d = 1;
+        }
+        else if (d == 31 && m == 12)
+        {
+            d = 1;
+            m = 1;
+            a++;
+        }
+        else
+        {
+            d++;
+        }
+    }
+    else
+    {
+        if (d == 30 || d == 2😎
+            {
+                m++;
+                d = 1;
+            }
+        else
+        {
+            d++;
+        }
+    }
+    printf("%2i %2i %4i", d, m, a);
+
+        return 0;
+    }
